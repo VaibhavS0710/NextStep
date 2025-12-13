@@ -1,7 +1,6 @@
 import { Router, Request, Response } from "express";
 import authRoutes from "./auth.routes";
 import studentRoutes from "./student.routes";
-import companyRoutes from "./company.routes";
 import internshipRoutes from "./internship.routes";
 import applicationRoutes from "./application.routes";
 import bookmarkRoutes from "./bookmark.routes";
@@ -33,7 +32,6 @@ router.use("/auth", authRoutes);
 
 // Profiles
 router.use("/students", studentRoutes);
-router.use("/companies", companyRoutes);
 
 // Internships & applications
 router.use("/internships", internshipRoutes);
